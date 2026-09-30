@@ -1,1 +1,1 @@
-commands.md
+mvn clean compile package install
