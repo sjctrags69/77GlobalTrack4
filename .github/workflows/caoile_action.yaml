@@ -17,13 +17,16 @@ jobs:
           Write-Output "Runner architecture: ${{ runner.arch }}"
 
       - name: Print the event that triggered the workflow
-        run: Write-Output "Event name: ${{ github.event_name }}"
+        run: |
+          Write-Output "Event name: ${{ github.event_name }}"
 
       - name: Print the branch name
-        run: Write-Output "Branch name: ${{ github.ref_name }}"
+        run: |
+          Write-Output "Branch name: ${{ github.ref_name }}"
 
       - name: Print the repository name
-        run: Write-Output "Repository name: ${{ github.repository }}"
+        run: |
+          Write-Output "Repository name: ${{ github.repository }}"
 
       - name: List all files in the GitHub workspace
         run: |
