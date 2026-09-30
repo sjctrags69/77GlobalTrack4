@@ -1,0 +1,34 @@
+name: Track 4 Print Metadata
+run-name: This ${{ github.actor }} is starting out GitHub Actions
+on: [push]
+jobs:
+  print-job:
+    runs-on: windows-latest
+    steps:
+      - name: Print messages in PowerShell
+        run: |
+          Write-Output "Hello from PowerShell!"
+          Write-Host "This prints to console output as well."
+          echo "echo works as an alias for Write-Output in PowerShell"
+
+      - name: Print the OS runner type
+        run: |
+          Write-Output "Runner OS: ${{ runner.os }}"
+          Write-Output "Runner architecture: ${{ runner.arch }}"
+
+      - name: Print the event that triggered the workflow
+        run: |
+          Write-Output "Event name: ${{ github.event_name }}"
+
+      - name: Print the branch name
+        run: |
+          Write-Output "Branch name: ${{ github.ref_name }}"
+
+      - name: Print the repository name
+        run: |
+          Write-Output "Repository name: ${{ github.repository }}"
+
+      - name: List all files in the GitHub workspace
+        run: |
+          Write-Output "Workspace path: ${{ github.workspace }}"
+          Get-ChildItem -Path "${{ github.workspace }}" -Recurse | Select-Object -ExpandProperty FullName
