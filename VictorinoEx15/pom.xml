@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.ssglobal.training.codes</groupId>
+  <artifactId>VictorinoEx15</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>VictorinoEx15</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  
+ <!-- JUnit Aggregator -->
+ 	<dependency>
+   		 <groupId>org.junit.jupiter</groupId>
+   	 	<artifactId>junit-jupiter</artifactId>
+  		 <version>5.14.4</version>
+   	 	<scope>test</scope>
+	</dependency>
+	
+<!-- JUnit Engine -->
+	<dependency>
+ 	   <groupId>org.junit.jupiter</groupId>
+  	  	<artifactId>junit-jupiter-engine</artifactId>
+   		 <version>5.14.4</version>
+   	 	<scope>test</scope>
+	</dependency>
+
+<!-- JUnit Params -->
+	<dependency>
+   	 <groupId>org.junit.jupiter</groupId>
+    	<artifactId>junit-jupiter-params</artifactId>
+    	<version>5.14.4</version>
+    	<scope>test</scope>
+	</dependency>
+
+<!-- Mocking Mockito -->
+	<dependency>
+  	  <groupId>org.mockito</groupId>
+   		 <artifactId>mockito-core</artifactId>
+   		 <version>5.24.0</version>
+  	  <scope>test</scope>
+	</dependency>
+
+<!-- Mockito J-Unit -->
+	<dependency>
+   	 <groupId>org.mockito</groupId>
+   		 <artifactId>mockito-junit-jupiter</artifactId>
+   		 <version>5.24.0</version>
+    	<scope>test</scope>
+	</dependency>
+
+<!-- Jakarta EE-->
+	<dependency>
+  	  <groupId>jakarta.platform</groupId>
+   		 <artifactId>jakarta.jakartaee-api</artifactId>
+   		 <version>11.0.0</version>
+   	 <scope>provided</scope>
+	</dependency>
+
+<!--Log4j2 Logging-->
+
+	<dependency>
+  	  <groupId>org.apache.logging.log4j</groupId>
+    	<artifactId>log4j-core</artifactId>
+    	<version>2.26.1</version>
+   	 <scope>compile</scope>
+	</dependency>
+
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.26.1</version>
+    <scope>compile</scope>
+</dependency>
+
+
+<!-- JAXB -->
+<dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-core</artifactId>
+    <version>4.0.9</version>
+    <scope>compile</scope>
+</dependency>
+
+
+
+	</dependencies>
+</project>
