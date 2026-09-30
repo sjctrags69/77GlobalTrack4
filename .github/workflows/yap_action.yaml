@@ -3,7 +3,7 @@ run-name: This ${{ github.actor }} is starting out GitHub Actions
 on: [push]
 jobs:
   print-job:
-    runs-on: windows -latest
+    runs-on: windows-latest
     steps:
       - name: Print messages in PowerShell
         run: |
