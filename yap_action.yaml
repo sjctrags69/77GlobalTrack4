@@ -1,0 +1,36 @@
+name: Track 4 Print Metadata
+run-name: This ${{ github.actor }} is starting out GitHub Actions
+on: [push]
+jobs:
+  print-job:
+    runs-on: windows-latest
+    steps:
+      - name: Print messages in PowerShell
+        run: |
+          Write-Output "Hello from PowerShell!"
+          Write-Host "This prints to console output as well."
+          echo "echo works as an alias for Write -Output in PowerShell"
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Print OS runner type
+        run: |
+          echo "OS Runner Type: ${{ runner.os }}"
+
+      - name: Print event name
+        run: |
+          echo "Event Name: ${{ github.event_name }}"
+
+      - name: Print branch name
+        run: |
+          echo "Branch Name: ${{ github.ref_name }}"
+
+      - name: Print repo name
+        run: |
+          echo "Repo Name: ${{ github.repository }}"
+
+      - name: List files in repo
+        run: |
+          echo "Listing Files in repository"
+          (Get-ChildItem -Recurse).FullName
