@@ -1,5 +1,5 @@
-Track 4 tau ght us the following concepts:
+Track 4 taught us the following concepts:
 - Maven
 - Git
 - GitHub
-- Git Hub Action s wor kflows
+- Git Hub Action s workflows
