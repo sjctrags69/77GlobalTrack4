@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Print messages in PowerShell
         run: |
-          Write -Output "Hello from PowerShell!"
-          Write -Host "This prints to console output as well."
+          Write-Output "Hello from PowerShell!"
+          Write-Host "This prints to console output as well."
           echo "echo works as an alias for Write -Output in PowerShell"
 
       - name: Checkout Code
