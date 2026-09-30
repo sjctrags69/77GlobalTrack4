@@ -7,6 +7,9 @@ jobs:
   print-job:
     runs-on: windows-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Print messages in PowerShell
         run: |
           Write-Output "Hello from PowerShell!"
@@ -16,4 +19,4 @@ jobs:
           Write-Output "Repository Name: ${{ github.repository }}"
 
           Write-Output "Files in Github Workspace:"
-          tree "${{ github.workspace }}"
+          tree "$env:GITHUB_WORKSPACE" /F
